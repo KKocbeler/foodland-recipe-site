@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './Articles.css'
 import { Link } from 'react-router-dom';
+import { RecipeContext } from '../context/recipeContext';
 
 const Articles = () => {
+    const [favs, setFavs] = useState(null)
+    const {recipes} = useContext(RecipeContext);
+
+    useEffect(() => {
+        if(recipes) {
+            setFavs(recipes)
+        }
+    }, [recipes])
+
+    console.log(favs)
   return (
     <>
         <div id='all-article'>
@@ -50,28 +61,34 @@ const Articles = () => {
             </div>
             <div id="fav-recipes">
                 <h4><Link className='leads'> Fav Recipes </Link></h4>
-                <div className="ara">
-                    <div className='fav-recipes__box'>
-                        <Link>
-                            <img src="Images/articles-img/fav-img.webp" alt="" />
-                            <h5>OVEN-BAKED RIBS</h5>
-                        </Link>
-                    </div>
-
-                    <div className='fav-recipes__box'> 
-                        <Link>
-                            <img src="Images/articles-img/fav-img.webp" alt="" />
-                            <h5>OVEN-BAKED RIBS</h5>
-                        </Link>
-                    </div>
-
-                    <div className='fav-recipes__box'> 
-                        <Link>
-                            <img src="Images/articles-img/fav-img.webp" alt="" />
-                            <h5>OVEN-BAKED RIBS</h5>
-                        </Link>
-                    </div>
-                </div>
+                {
+                    favs ? (
+                        <div className="ara">
+                            <div className='fav-recipes__box'>
+                                <Link to={'/recipe-details/67'}>
+                                    <img src={favs[0].Image} alt="" />
+                                    <h5>{favs[0].Title}</h5>
+                                </Link>
+                            </div>
+        
+                            <div className='fav-recipes__box'> 
+                                <Link to={'/recipe-details/760'}>
+                                    <img src={favs[7].Image} alt="" />
+                                    <h5>{favs[7].Title}</h5>
+                                </Link>
+                            </div>
+        
+                            <div className='fav-recipes__box'> 
+                                <Link to={'/recipe-details/855'}>
+                                    <img src={favs[11].Image} alt="" />
+                                    <h5>{favs[11].Title}</h5>
+                                </Link>
+                            </div>
+                        </div>
+                    ) : (
+                        null
+                    )
+                }
             </div>
         </div>   
     </>

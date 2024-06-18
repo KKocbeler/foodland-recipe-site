@@ -11,7 +11,7 @@
   text-align: center;
   width: 100%;
   font-size: 2.8rem;
-  color: #495E57;
+  color: var(--dark-text-color);
 }
  
 #recipe-details .recipe-title h3::after {
@@ -21,7 +21,7 @@
   right: 0;
   width: 100%;
   height: .3rem;
-  background-color: rgb(236, 143, 94);
+  background-color: var(--effect-color);
   border-radius: .5rem;
 }
 
@@ -51,7 +51,7 @@
   font-weight: 600;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
-  color: rgb(255, 89, 0);
+  color: var(--effect-color);
   position: relative;
 }
 
@@ -62,7 +62,7 @@
   left: 0;
   width: 25%;
   height: .3rem;
-  background-color: rgb(255, 89, 0);
+  background-color: var(--effect-color);
   border-radius: .3rem;
 }
 
@@ -70,7 +70,7 @@
   font-size: 1.8rem;
   line-height: 2.4rem;
   padding: .5rem;
-  color: #495E57;
+  color: var(--dark-text-color);
 }
 
 #recipe-details .details-ingri {
@@ -83,7 +83,7 @@
   font-weight: 600;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
-  color: rgb(255, 89, 0);
+  color: var(--effect-color);
   position: relative;
 }
 
@@ -94,7 +94,7 @@
   left: 0;
   width: 20%;
   height: .3rem;
-  background-color: rgb(255, 89, 0);
+  background-color: var(--effect-color);
   border-radius: .3rem;
 }
 
@@ -107,14 +107,14 @@
 }
 
 #recipe-details .details-ingri ul li i{
-  color: #F4CE14;
+  color: var(--effect-color);
   font-size: 1.4rem;
 }
 
 #recipe-details .details-ingri ul li span {
   font-size: 1.7rem;
   padding-left: .5rem;
-  color: #495E57;
+  color: var(--dark-text-color);
 }
 
 @media (max-width: 767px) {

@@ -14,12 +14,14 @@ import Contact from './pages/Contact';
 import Recipes from './pages/Recipes';
 import RecipeDetails from './pages/RecipeDetails';
 import NotFoundPage from './components/Pieces/NotFoundPage';
+import ScrollToTop from './components/Pieces/ScrollToTop';
 
 function App() {
 
     return (
         <RecipeContextProvider>
             <Router>
+                <ScrollToTop />
                 <Routes>
                     <Route
                         path='/'

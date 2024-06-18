@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
 
     const [showNav, setShowNav] = useState(false);
-    const [showNavbarMobile, setShowNavbarMobile] = useState(true)
+    const [showNavbarMobile, setShowNavbarMobile] = useState(true);
 
     const toggleNav = () => {
         setShowNav(!showNav)
@@ -19,7 +19,6 @@ const Navbar = () => {
     const handleNavLinkClick = () => {
         setShowNavbarMobile(true);
     }
-
 
   return (
     <>
@@ -35,16 +34,13 @@ const Navbar = () => {
             <div className={showNavbarMobile ? 'nav-menu-show' : 'nav-menu-hide'}>
                 <ul className="nav-list">
                     <li className='nav-items'>
-                        <NavLink className="" to={'/'} onClick={ () => { toggleNav(); handleNavLinkClick(); } }> Home </NavLink>
+                        <NavLink className="" to={'/'} onClick={ () => { toggleNav(); handleNavLinkClick(); }} activeClassName="active"> Home </NavLink>
                     </li>
                     <li className='nav-items'>
-                        <NavLink className="" to={'/'} onClick={ () => { toggleNav(); handleNavLinkClick(); } }> Article </NavLink>
+                        <NavLink className="" to={'/contact'} onClick={ () => { toggleNav(); handleNavLinkClick(); }} activeClassName="active"> Contact </NavLink>
                     </li>
                     <li className='nav-items'>
-                        <NavLink className="" to={'/contact'} onClick={ () => { toggleNav(); handleNavLinkClick(); } }> Contact </NavLink>
-                    </li>
-                    <li className='nav-items'>
-                        <NavLink className="" to={'/contact'} onClick={ () => { toggleNav(); handleNavLinkClick(); } }> About </NavLink>
+                        <NavLink className="" to={'/c'} onClick={ () => { toggleNav(); handleNavLinkClick(); }} activeClassName="active"> Error </NavLink>
                     </li>
                 </ul>
             </div>

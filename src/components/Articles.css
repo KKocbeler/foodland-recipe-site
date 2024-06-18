@@ -51,8 +51,10 @@
 }
 
 .article-right p {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .article-right .date-article {
@@ -97,6 +99,7 @@
 }
 
 .fav-recipes__box h5 {
+    font-size: 1.8rem;
     padding: 1rem .5rem;
 }
 
@@ -145,17 +148,15 @@
         width: 100%;
     }
 
-    .ara {
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+    .article-right p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 
-    .ara .fav-recipes__box {
-        width: 100%;
-    }
-
-    .ara .fav-recipes__box img {
-        height: 30rem !important;
+    #fav-recipes {
+        display: none;
     }
 
 }

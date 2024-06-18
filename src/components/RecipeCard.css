@@ -42,13 +42,13 @@
 .food-card .card-main {
     height: 20vh;
     padding: .5rem;
-    background-color: #F5F7F8;
+    background-color: var(--light-text-color);
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
 }
 
 #recipe-card .card-main  {
-    color: #EC8F5E;
+    color: var(--effect-color);
     position: relative;
 }
 
@@ -58,7 +58,7 @@
     top: 2.5rem;
     width: 20%;
     height: .3rem;
-    background-color: #EC8F5E;
+    background-color: var(--effect-color);
     border-radius: .5rem;
     transition: all .5s;
 }
@@ -69,7 +69,7 @@
 
 #recipe-card .card-main h3 {
     margin-top: .5rem;
-    color: #495E57;
+    color: var(--dark-text-color);
 }
 
 
@@ -89,7 +89,7 @@
     }
 
     #recipe-card .food-card {
-        border: 1px solid #EC8F5E;
+        border: 1px solid var(--effect-color);
     }
 
 }

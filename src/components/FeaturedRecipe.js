@@ -13,26 +13,26 @@ const FeaturedRecipe = () => {
         <div id='featured'>
             <div className="featured-images">
                 <Link to={'/recipes/?q=soup'}>
-                    <img src="Images/FeaturedRecipe/Soop.jpg" className='featured-height rounded' alt="" />
+                    <img src="Images/FeaturedRecipe/Soop.jpg" className='rounded' alt="" />
                     <button className='featured-btn'>Soups</button>
                 </Link>
             </div>
             <div className="featured-images">
                 <Link to={'/recipes/?q=pasta'}>
-                    <img src="Images/FeaturedRecipe/Pasta.webp" className='featured-height rounded' alt="" />
+                    <img src="Images/FeaturedRecipe/Pasta.webp" className='rounded' alt="" />
                     <button className='featured-btn'>Pasta</button>
                 </Link>
             </div>
             <div className="featured-images">
                 <Link to={'/recipes/?q=cookie'}>
-                    <img src="Images/FeaturedRecipe/Coocies.jpg" className='featured-height rounded' alt="" />
+                    <img src="Images/FeaturedRecipe/Coocies.jpg" className='rounded' alt="" />
                     <button className='featured-btn'>Cookies</button>
                 </Link>
             </div>
             <div className="featured-images">
-                <Link to={'/recipes/?q=dessert'}>
-                    <img src="Images/FeaturedRecipe/dessert.jpg" className='featured-height rounded' alt="" />
-                    <button className='featured-btn'>Desserts</button>
+                <Link to={'/recipes/?q=cake'}>
+                    <img src="Images/FeaturedRecipe/dessert.jpg" className='rounded' alt="" />
+                    <button className='featured-btn'>Cakes</button>
                 </Link>
             </div>
         </div>

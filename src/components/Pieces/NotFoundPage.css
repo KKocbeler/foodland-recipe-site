@@ -1,5 +1,5 @@
 #not-found {
-    background-color: #F4CE14;
+    background-color: var(--primary-color);
     margin: 5rem 10rem;
     padding-top: 8rem;
     border-radius: 1.6rem;
@@ -21,7 +21,7 @@
 
 #not-found p a {
     font-size: 2rem;
-    color: #495E57;
+    color: var(--effect-color);
     text-decoration: underline;
 }
 
